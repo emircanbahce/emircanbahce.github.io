@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Emircan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <nav>
+        <button onclick="document.getElementById('about').scrollIntoView();">Hakkımda</button>
+        <button onclick="document.getElementById('hobbies-interests').scrollIntoView();">Hobilerim/İlgi Alanlarım</button>
+        <button onclick="document.getElementById('footer').scrollIntoView();">İletişim</button>
+        <button id="dark-mode-toggle">Karanlık Mod</button>
+
+    </nav>
+    <header>
+        <h1>Emircan Bahçe</h1>
+    </header>
+</body>
+    <section id="about">
+        <h2>Hakkımda</h2>
+        <div class="about-container">
+            <img src="profil-foto.jpg" alt="Ersan Emircan Kula'nın Profil Fotoğrafı" id="about-img">
+            <p>Merhaba, ben Emircan Bahçe. Yönetim Bilişim Sistemleri 3.sınıf öğrencisiyim ve Veri Analizi, İş Zekası ve Yapay Zeka uygulamalarına ilgi duyuyorum. Yemek yemeyi, gezmeyi, yeni şeyler denemeyi ve eğlenmeyi seviyorum.</p>
+            <button id="download-cv" onclick="window.location.href='cv-emircan-bahce.pdf';">CV'imi İndir</button>
+        </div>
+    </section>    
+        <div id="image-slider">
+            <h3>Bazı Fotoğraflarım</h3>
+            <div class="image-info-container">
+                <p id="image-info">Ankara, ATG Girişim-23 Etkinliği</p>
+            </div>
+            <img src="image1.jpg" alt="Ankara, ATG Girişim-23 Etkinliği, Mart 2024" id="slider-image">
+            <button id="next-image">Sonraki Fotoğrafım İçin Tıklayınız</button>
+        </div>
+    </section>    
+    <div id="hobbies-interests">
+        <section id="hobbies">
+            <h2>Hobilerim</h2>
+            <ul>
+                <li>Araştırmak, Yeni Bilgiler Edinmek</li>
+                <li>Gezmek</li>
+                <li>Fotoğraf Çekmek</li>
+                <li>Oyun Oynamak</li>
+                <li>Yüzmek</li>
+                <li>Yemek Yemek</li>
+                <li>Ve çeşitli etkinliklere katılıp yeni ortamları deneyimlemek ve insanları tanımak.</li>
+            </ul>
+        </section>
+        <section id="interests">
+            <h2>İlgi Alanlarım</h2>
+            <ul>
+                <li>Veri Analizi ve Görselleştirme</li>
+                <li>Yapay Zeka</li>
+                <li>Finans Piyasaları</li>
+                <li>Tarih</li>
+        
+            </ul>
+        </section>
+    </div>    
+    <footer>
+        <h2>İletişim</h2>
+        <div id="contact-info">
+            <p>Email: emircanbahce21@gmail.com</p>
+            <p>Sosyal Medya: <a href="https://www.linkedin.com/in/emircan-bahce1/">LinkedIn</a>, <a href="https://twitter.com/emrcnbhc">Twitter</a>, <a href="https://www.instagram.com/emircanbahcee/">Instagram</a></p>
+        </div>
+        <button id="toggle-contact">İletişim Bilgilerini Göster/Gizle</button>
+    </footer>    
+</body>
+</html>

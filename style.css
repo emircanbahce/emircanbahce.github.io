@@ -1,0 +1,177 @@
+body {
+    background: linear-gradient(to right, #ffffff, #e6e6e6);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header, section, footer {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header h1, section h2, footer h2 {
+    color: #333;
+}
+
+/* Genel Ayarlar */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Karanlık Mod Stilleri */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header.dark-mode, section.dark-mode, footer.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+button.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+button.dark-mode:hover {
+    background-color: #444;
+}
+
+nav button.dark-mode {
+    border-color: #ffffff;
+}
+
+#about-img {
+    width: 300px; /* Profil fotoğrafının genişliğini belirler */
+    height: auto; /* Yüksekliği, genişliğe orantılı olarak ayarlar */
+    border-radius: 0; /* Fotoğrafın köşelerini yuvarlak yapar, isteğe bağlı olarak ayarlayabilirsiniz */
+    margin-left: 575px; /* Sol tarafa 20px boşluk bırakarak fotoğrafı sağa kaydırır */
+}
+
+#image-slider {
+    display: flex;
+    flex-direction: column; /* İçerikleri dikey sıralama yapar */
+    align-items: center; /* İçerikleri yatay eksende ortalar */
+    justify-content: center; /* İçerikleri dikey eksende ortalar */
+    text-align: center; /* Metin içeriklerini ortalar */
+    margin: auto; /* Otomatik marj ile dışa doğru ortalanır */
+    width: 100%; /* Genişliği ebeveynine göre ayarlar */
+}
+
+#slider-image {
+    width: 500px; /* Resmin genişliğini belirler */
+    height: auto; /* Resmin yüksekliğini orantılı olarak ayarlar */
+    border-radius: 5px; /* Resmin köşelerini yuvarlak yapar */
+    margin-bottom: 20px; /* Resim ile buton arasında 20px boşluk bırakır */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-info-container {
+    width: 100%; /* Genişliği tam ekran yapar */
+}
+
+#next-image {
+    padding: 8px 16px; /* Butonun dolgu boyutlarını ayarlar */
+    background-color: #006400; /* Koyu yeşil arka plan rengi */
+    color: white; /* Metin rengi beyaz */
+    border: none;
+    border-radius: 5px; /* Köşeleri yuvarlaklaştır */
+    cursor: pointer;
+    width: auto; /* Buton genişliğini içeriğine göre ayarla */
+    transition: background-color 0.3s; /* Renk değişiminde yumuşak geçiş */
+    font-size: 14px; /* Metin boyutunu ayarlar */
+}
+
+#next-image:hover {
+    background-color: #004d00; /* Daha koyu yeşil renk üzerine gelindiğinde */
+}
+
+button {
+    padding: 10px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#hobbies-interests {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#hobbies, #interests {
+    flex: 1;
+    margin: 5px;
+}
+#download-cv {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #006400	; /* Yeşil arkaplan */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#download-cv:hover {
+    background-color: #006400	; /* Daha koyu yeşil */
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: transparent; /* Buton arkaplanını şeffaf yap */
+    color: #006400	; /* Mavi renkli metin */
+    border: 2px solid #ffffff; /* Mavi renkli çerçeve */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s; /* Renk değişim animasyonu */
+    margin-left: 5px; /* Butonlar arası boşluk */
+}
+
+nav button:hover {
+    background-color: #006400	; /* Butonun üzerine gelindiğinde mavi arkaplan */
+    color: white; /* Butonun üzerine gelindiğinde beyaz metin */
+}
+.enlarged {
+    transform: scale(2); /* Fotoğrafı 2 kat büyüt */
+    transition: transform 0.3s ease-in-out;
+}
+#toggle-contact {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #006400; /* Butonun arka plan rengini koyu yeşil yap */
+    color: white; /* Metin rengini beyaz yap */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Renk değişimine animasyon ekle */
+}
+
+#toggle-contact:hover {
+    background-color: #004d00; /* Butonun üzerine gelindiğinde daha koyu yeşil yap */
+}
